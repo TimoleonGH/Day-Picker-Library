@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    android:background="@color/colorBackground">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sundayB"
+
+        android:padding="10dp"
+        android:background="@drawable/round_button_white"
+        android:text="@string/sundayMin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/days_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mondayB"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mondayB"
+
+        android:padding="10dp"
+        android:background="@drawable/round_button_white"
+        android:text="@string/mondayMin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/days_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tuesdayB"
+        app:layout_constraintStart_toEndOf="@+id/sundayB"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tuesdayB"
+
+        android:padding="10dp"
+        android:background="@drawable/round_button_white"
+        android:text="@string/tuesdayMin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/days_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wednesdayB"
+        app:layout_constraintStart_toEndOf="@+id/mondayB"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/wednesdayB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/round_button_white"
+        android:padding="10dp"
+        android:text="@string/wednesdayMin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/days_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/thursdayB"
+        app:layout_constraintStart_toEndOf="@+id/tuesdayB"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/thursdayB"
+
+        android:padding="10dp"
+        android:background="@drawable/round_button_white"
+        android:text="@string/thursdayMin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/days_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fridayB"
+        app:layout_constraintStart_toEndOf="@+id/wednesdayB"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fridayB"
+
+        android:padding="10dp"
+        android:background="@drawable/round_button_white"
+        android:text="@string/fridayMin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/days_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saturdayB"
+        app:layout_constraintStart_toEndOf="@+id/thursdayB" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/saturdayB"
+
+        android:padding="10dp"
+        android:background="@drawable/round_button_white"
+        android:text="@string/saturdayMin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/days_text_size"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fridayB"/>
+</merge>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DayPicker</string>
+    <string name="sundayMin">S</string>
+    <string name="mondayMin">M</string>
+    <string name="tuesdayMin">T</string>
+    <string name="wednesdayMin">W</string>
+    <string name="thursdayMin">T</string>
+    <string name="fridayMin">F</string>
+    <string name="saturdayMin">S</string>
+</resources>
